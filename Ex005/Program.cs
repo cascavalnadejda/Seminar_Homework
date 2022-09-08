@@ -4,5 +4,12 @@ int GenerateRandomNumbers()
     int n = new Random().Next(100, 1000);
     return n;
 }
-int n = n % 100;
-Console.Writeline(a);
+
+void CompraiseNumbers()
+{
+    int n = GenerateRandomNumbers();
+    Console.WriteLine(n);
+    Console.Write(Convert.ToString(n)[1]);
+}
+
+CompraiseNumbers();
